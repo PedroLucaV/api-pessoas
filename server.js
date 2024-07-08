@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json()); // Middleware to parse JSON bodies
 app.use(express.urlencoded({ extended: true }))// Validate forms and 404 instructions
 app.use(express.json()); //Use json from express
-app.use(router);
+app.use(router); //Calling router from routes of API
 
 createTable(); // Create the SQLite table if don't exist
 
